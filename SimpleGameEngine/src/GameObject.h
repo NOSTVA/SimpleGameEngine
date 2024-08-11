@@ -36,7 +36,8 @@ namespace engine {
 
 	template<class ComponentType, typename... Args>
 	std::shared_ptr<ComponentType> GameObject::AddComponent(Args&&... params) {
-		if (ComponentType::type == SpriteRenderer::type) {
+
+		if (ComponentType::type == SpriteRenderer::type || ComponentType::type == Transform::type) {
 			auto existingComponent = GetComponent<ComponentType>();
 			if (existingComponent) {
 				throw std::runtime_error("Component of this type already exists.");
