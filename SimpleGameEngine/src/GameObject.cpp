@@ -1,0 +1,34 @@
+#include "GameObject.h"
+#include "Component.h"
+
+engine::GameObject::GameObject() {
+	this->transform = AddComponent<Transform>();
+}
+
+void engine::GameObject::Start() {
+	for (const auto& component : m_components) {
+		component->Start();
+	}
+}
+
+void engine::GameObject::Update(float deltaTime) {
+	for (const auto& component : m_components) {
+		component->Update(deltaTime);
+	}
+}
+
+void engine::GameObject::Render(sf::RenderWindow& window) {
+	auto renderer = GetComponent<SpriteRenderer>();
+	auto transform = GetComponent<Transform>();
+
+	if (renderer != nullptr && transform != nullptr) {
+		const auto& sprite = renderer->GetSprite();
+
+		if (sprite != nullptr) {
+			sprite->setPosition(transform->position);
+			sprite->setRotation(transform->rotation);
+			sprite->setScale(transform->scale);
+			window.draw(*sprite);
+		}
+	}
+}

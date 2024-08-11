@@ -1,0 +1,519 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{4dff17c3-8a4a-4a41-8e4a-bd38b2102f81}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Application.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\Assets\Character\Textures\walkcycle\BEHIND_quiver.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\BELT_leather.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\BELT_rope.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\BODY_male.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\BODY_skeleton.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\FEET_plate_armor_shoes.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\FEET_shoes_brown.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\HANDS_plate_armor_gloves.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\HEAD_chain_armor_helmet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\HEAD_chain_armor_hood.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\HEAD_hair_blonde.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\HEAD_leather_armor_hat.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\HEAD_plate_armor_helmet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\HEAD_robe_hood.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\LEGS_pants_greenish.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\LEGS_plate_armor_pants.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\LEGS_robe_skirt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\TORSO_chain_armor_jacket_purple.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\TORSO_chain_armor_torso.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\TORSO_leather_armor_bracers.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\TORSO_leather_armor_shirt_white.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\TORSO_leather_armor_shoulders.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\TORSO_leather_armor_torso.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\TORSO_plate_armor_arms_shoulders.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\TORSO_plate_armor_torso.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\TORSO_robe_shirt_brown.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\WEAPON_shield_cutout_body.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\walkcycle\WEAPON_shield_cutout_chain_armor_helmet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\BEHIND_quiver.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\BELT_leather.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\BELT_rope.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\BODY_animation.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\FEET_plate_armor_shoes.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\FEET_shoes_brown.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\HANDS_plate_armor_gloves.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\HEAD_chain_armor_helmet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\HEAD_chain_armor_hood.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\HEAD_hair_blonde.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\HEAD_leather_armor_hat.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\HEAD_plate_armor_helmet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\HEAD_robe_hood.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\LEGS_pants_greenish.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\LEGS_plate_armor_pants.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\LEGS_robe_skirt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\TORSO_chain_armor_jacket_purple.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\TORSO_chain_armor_torso.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\TORSO_leather_armor_bracers.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\TORSO_leather_armor_shirt_white.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\TORSO_leather_armor_shoulders.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\TORSO_leather_armor_torso.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\TORSO_plate_armor_arms_shoulders.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\TORSO_plate_armor_torso.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\TORSO_robe_shirt_brown.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\WEAPON_shield_cutout_body.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\WEAPON_shield_cutout_chain_armor_helmet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\WEAPON_spear.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\thrust\WEAPON_staff.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\BEHIND_quiver.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\BELT_leather.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\BELT_rope.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\BODY_male.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\BODY_skeleton.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\FEET_plate_armor_shoes.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\FEET_shoes_brown.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\HANDS_plate_armor_gloves.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\HEAD_chain_armor_helmet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\HEAD_chain_armor_hood.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\HEAD_hair_blonde.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\HEAD_leather_armor_hat.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\HEAD_plate_armor_helmet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\HEAD_robe_hood.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\HEAD_skeleton_eye_glow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\LEGS_pants_greenish.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\LEGS_plate_armor_pants.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\LEGS_robe_skirt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\TORSO_chain_armor_jacket_purple.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\TORSO_chain_armor_torso.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\TORSO_leather_armor_bracers.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\TORSO_leather_armor_shirt_white.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\TORSO_leather_armor_shoulders.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\TORSO_leather_armor_torso.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\TORSO_plate_armor_arms_shoulders.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\TORSO_plate_armor_torso.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\spellcast\TORSO_robe_shirt_brown.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\BEHIND_quiver.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\BELT_leather.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\BELT_rope.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\BODY_human.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\BODY_skeleton.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\FEET_plate_armor_shoes.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\FEET_shoes_brown.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\HANDS_plate_armor_gloves.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\HEAD_chain_armor_helmet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\HEAD_chain_armor_hood.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\HEAD_hair_blonde.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\HEAD_leather_armor_hat.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\HEAD_plate_armor_helmet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\HEAD_robe_hood.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\LEGS_pants_greenish.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\LEGS_plate_armor_pants.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\LEGS_robe_skirt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\TORSO_chain_armor_jacket_purple.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\TORSO_chain_armor_torso.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\TORSO_leather_armor_bracers.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\TORSO_leather_armor_shirt_white.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\TORSO_leather_armor_shoulders.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\TORSO_leather_armor_torso.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\TORSO_plate_armor_arms_shoulders.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\TORSO_plate_armor_torso.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\TORSO_robe_shirt_brown.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\slash\WEAPON_dagger.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\BEHIND_quiver.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\BELT_leather.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\BELT_rope.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\BODY_male.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\BODY_skeleton.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\FEET_plate_armor_shoes.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\FEET_shoes_brown.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\HANDS_plate_armor_gloves.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\HEAD_chain_armor_helmet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\HEAD_chain_armor_hood.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\HEAD_hair_blonde.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\HEAD_leather_armor_hat.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\HEAD_plate_armor_helmet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\HEAD_robe_hood.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\LEGS_pants_greenish.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\LEGS_plate_armor_pants.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\LEGS_robe_skirt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\TORSO_chain_armor_jacket_purple.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\TORSO_chain_armor_torso.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\TORSO_leather_armor_bracers.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\TORSO_leather_armor_shirt_white.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\TORSO_leather_armor_shoulders.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\TORSO_leather_armor_torso.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\TORSO_plate_armor_arms_shoulders.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\TORSO_plate_armor_torso.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\hurt\TORSO_robe_shirt_brown.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\combat_dummy\BODY_animation.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\BELT_leather.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\BELT_rope.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\BODY_animation.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\FEET_plate_armor_shoes.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\FEET_shoes_brown.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\HANDS_plate_armor_gloves.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\HEAD_chain_armor_helmet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\HEAD_chain_armor_hood.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\HEAD_hair_blonde.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\HEAD_leather_armor_hat.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\HEAD_plate_armor_helmet.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\HEAD_robe_hood.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\LEGS_pants_greenish.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\LEGS_plate_armor_pants.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\LEGS_robe_skirt.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\TORSO_chain_armor_jacket_purple.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\TORSO_chain_armor_torso.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\TORSO_leather_armor_bracers.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\TORSO_leather_armor_shirt_white.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\TORSO_leather_armor_shoulders.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\TORSO_leather_armor_torso.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\TORSO_plate_armor_arms_shoulders.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\TORSO_plate_armor_torso.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\TORSO_robe_shirt_brown.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\WEAPON_arrow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="src\Assets\Character\Textures\bow\WEAPON_bow.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

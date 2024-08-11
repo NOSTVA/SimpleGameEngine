@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{bc437ae3-17fe-4257-a9bc-095aec1d4de6}</ProjectGuid>
+    <RootNamespace>Game</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)SimpleGameEngine\src</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)SimpleGameEngine\src</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)SimpleGameEngine\src</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)SimpleGameEngine\src</AdditionalIncludeDirectories>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Application.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SimpleGameEngine\SimpleGameEngine.vcxproj">
+      <Project>{fddbce0f-4a10-4589-a616-171c5ce95ee2}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="src\Assets\Character\Textures\bow\BELT_leather.png" />
+    <Image Include="src\Assets\Character\Textures\bow\BELT_rope.png" />
+    <Image Include="src\Assets\Character\Textures\bow\BODY_animation.png" />
+    <Image Include="src\Assets\Character\Textures\bow\FEET_plate_armor_shoes.png" />
+    <Image Include="src\Assets\Character\Textures\bow\FEET_shoes_brown.png" />
+    <Image Include="src\Assets\Character\Textures\bow\HANDS_plate_armor_gloves.png" />
+    <Image Include="src\Assets\Character\Textures\bow\HEAD_chain_armor_helmet.png" />
+    <Image Include="src\Assets\Character\Textures\bow\HEAD_chain_armor_hood.png" />
+    <Image Include="src\Assets\Character\Textures\bow\HEAD_hair_blonde.png" />
+    <Image Include="src\Assets\Character\Textures\bow\HEAD_leather_armor_hat.png" />
+    <Image Include="src\Assets\Character\Textures\bow\HEAD_plate_armor_helmet.png" />
+    <Image Include="src\Assets\Character\Textures\bow\HEAD_robe_hood.png" />
+    <Image Include="src\Assets\Character\Textures\bow\LEGS_pants_greenish.png" />
+    <Image Include="src\Assets\Character\Textures\bow\LEGS_plate_armor_pants.png" />
+    <Image Include="src\Assets\Character\Textures\bow\LEGS_robe_skirt.png" />
+    <Image Include="src\Assets\Character\Textures\bow\TORSO_chain_armor_jacket_purple.png" />
+    <Image Include="src\Assets\Character\Textures\bow\TORSO_chain_armor_torso.png" />
+    <Image Include="src\Assets\Character\Textures\bow\TORSO_leather_armor_bracers.png" />
+    <Image Include="src\Assets\Character\Textures\bow\TORSO_leather_armor_shirt_white.png" />
+    <Image Include="src\Assets\Character\Textures\bow\TORSO_leather_armor_shoulders.png" />
+    <Image Include="src\Assets\Character\Textures\bow\TORSO_leather_armor_torso.png" />
+    <Image Include="src\Assets\Character\Textures\bow\TORSO_plate_armor_arms_shoulders.png" />
+    <Image Include="src\Assets\Character\Textures\bow\TORSO_plate_armor_torso.png" />
+    <Image Include="src\Assets\Character\Textures\bow\TORSO_robe_shirt_brown.png" />
+    <Image Include="src\Assets\Character\Textures\bow\WEAPON_arrow.png" />
+    <Image Include="src\Assets\Character\Textures\bow\WEAPON_bow.png" />
+    <Image Include="src\Assets\Character\Textures\combat_dummy\BODY_animation.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\BEHIND_quiver.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\BELT_leather.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\BELT_rope.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\BODY_male.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\BODY_skeleton.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\FEET_plate_armor_shoes.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\FEET_shoes_brown.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\HANDS_plate_armor_gloves.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\HEAD_chain_armor_helmet.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\HEAD_chain_armor_hood.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\HEAD_hair_blonde.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\HEAD_leather_armor_hat.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\HEAD_plate_armor_helmet.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\HEAD_robe_hood.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\LEGS_pants_greenish.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\LEGS_plate_armor_pants.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\LEGS_robe_skirt.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\TORSO_chain_armor_jacket_purple.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\TORSO_chain_armor_torso.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\TORSO_leather_armor_bracers.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\TORSO_leather_armor_shirt_white.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\TORSO_leather_armor_shoulders.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\TORSO_leather_armor_torso.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\TORSO_plate_armor_arms_shoulders.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\TORSO_plate_armor_torso.png" />
+    <Image Include="src\Assets\Character\Textures\hurt\TORSO_robe_shirt_brown.png" />
+    <Image Include="src\Assets\Character\Textures\slash\BEHIND_quiver.png" />
+    <Image Include="src\Assets\Character\Textures\slash\BELT_leather.png" />
+    <Image Include="src\Assets\Character\Textures\slash\BELT_rope.png" />
+    <Image Include="src\Assets\Character\Textures\slash\BODY_human.png" />
+    <Image Include="src\Assets\Character\Textures\slash\BODY_skeleton.png" />
+    <Image Include="src\Assets\Character\Textures\slash\FEET_plate_armor_shoes.png" />
+    <Image Include="src\Assets\Character\Textures\slash\FEET_shoes_brown.png" />
+    <Image Include="src\Assets\Character\Textures\slash\HANDS_plate_armor_gloves.png" />
+    <Image Include="src\Assets\Character\Textures\slash\HEAD_chain_armor_helmet.png" />
+    <Image Include="src\Assets\Character\Textures\slash\HEAD_chain_armor_hood.png" />
+    <Image Include="src\Assets\Character\Textures\slash\HEAD_hair_blonde.png" />
+    <Image Include="src\Assets\Character\Textures\slash\HEAD_leather_armor_hat.png" />
+    <Image Include="src\Assets\Character\Textures\slash\HEAD_plate_armor_helmet.png" />
+    <Image Include="src\Assets\Character\Textures\slash\HEAD_robe_hood.png" />
+    <Image Include="src\Assets\Character\Textures\slash\LEGS_pants_greenish.png" />
+    <Image Include="src\Assets\Character\Textures\slash\LEGS_plate_armor_pants.png" />
+    <Image Include="src\Assets\Character\Textures\slash\LEGS_robe_skirt.png" />
+    <Image Include="src\Assets\Character\Textures\slash\TORSO_chain_armor_jacket_purple.png" />
+    <Image Include="src\Assets\Character\Textures\slash\TORSO_chain_armor_torso.png" />
+    <Image Include="src\Assets\Character\Textures\slash\TORSO_leather_armor_bracers.png" />
+    <Image Include="src\Assets\Character\Textures\slash\TORSO_leather_armor_shirt_white.png" />
+    <Image Include="src\Assets\Character\Textures\slash\TORSO_leather_armor_shoulders.png" />
+    <Image Include="src\Assets\Character\Textures\slash\TORSO_leather_armor_torso.png" />
+    <Image Include="src\Assets\Character\Textures\slash\TORSO_plate_armor_arms_shoulders.png" />
+    <Image Include="src\Assets\Character\Textures\slash\TORSO_plate_armor_torso.png" />
+    <Image Include="src\Assets\Character\Textures\slash\TORSO_robe_shirt_brown.png" />
+    <Image Include="src\Assets\Character\Textures\slash\WEAPON_dagger.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\BEHIND_quiver.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\BELT_leather.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\BELT_rope.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\BODY_male.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\BODY_skeleton.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\FEET_plate_armor_shoes.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\FEET_shoes_brown.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\HANDS_plate_armor_gloves.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\HEAD_chain_armor_helmet.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\HEAD_chain_armor_hood.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\HEAD_hair_blonde.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\HEAD_leather_armor_hat.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\HEAD_plate_armor_helmet.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\HEAD_robe_hood.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\HEAD_skeleton_eye_glow.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\LEGS_pants_greenish.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\LEGS_plate_armor_pants.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\LEGS_robe_skirt.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\TORSO_chain_armor_jacket_purple.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\TORSO_chain_armor_torso.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\TORSO_leather_armor_bracers.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\TORSO_leather_armor_shirt_white.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\TORSO_leather_armor_shoulders.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\TORSO_leather_armor_torso.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\TORSO_plate_armor_arms_shoulders.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\TORSO_plate_armor_torso.png" />
+    <Image Include="src\Assets\Character\Textures\spellcast\TORSO_robe_shirt_brown.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\BEHIND_quiver.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\BELT_leather.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\BELT_rope.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\BODY_animation.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\FEET_plate_armor_shoes.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\FEET_shoes_brown.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\HANDS_plate_armor_gloves.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\HEAD_chain_armor_helmet.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\HEAD_chain_armor_hood.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\HEAD_hair_blonde.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\HEAD_leather_armor_hat.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\HEAD_plate_armor_helmet.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\HEAD_robe_hood.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\LEGS_pants_greenish.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\LEGS_plate_armor_pants.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\LEGS_robe_skirt.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\TORSO_chain_armor_jacket_purple.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\TORSO_chain_armor_torso.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\TORSO_leather_armor_bracers.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\TORSO_leather_armor_shirt_white.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\TORSO_leather_armor_shoulders.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\TORSO_leather_armor_torso.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\TORSO_plate_armor_arms_shoulders.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\TORSO_plate_armor_torso.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\TORSO_robe_shirt_brown.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\WEAPON_shield_cutout_body.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\WEAPON_shield_cutout_chain_armor_helmet.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\WEAPON_spear.png" />
+    <Image Include="src\Assets\Character\Textures\thrust\WEAPON_staff.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\BEHIND_quiver.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\BELT_leather.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\BELT_rope.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\BODY_male.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\BODY_skeleton.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\FEET_plate_armor_shoes.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\FEET_shoes_brown.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\HANDS_plate_armor_gloves.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\HEAD_chain_armor_helmet.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\HEAD_chain_armor_hood.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\HEAD_hair_blonde.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\HEAD_leather_armor_hat.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\HEAD_plate_armor_helmet.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\HEAD_robe_hood.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\LEGS_pants_greenish.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\LEGS_plate_armor_pants.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\LEGS_robe_skirt.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\TORSO_chain_armor_jacket_purple.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\TORSO_chain_armor_torso.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\TORSO_leather_armor_bracers.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\TORSO_leather_armor_shirt_white.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\TORSO_leather_armor_shoulders.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\TORSO_leather_armor_torso.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\TORSO_plate_armor_arms_shoulders.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\TORSO_plate_armor_torso.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\TORSO_robe_shirt_brown.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\WEAPON_shield_cutout_body.png" />
+    <Image Include="src\Assets\Character\Textures\walkcycle\WEAPON_shield_cutout_chain_armor_helmet.png" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
