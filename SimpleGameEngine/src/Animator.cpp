@@ -1,12 +1,13 @@
 #include "Animator.h"
 #include "SpriteRenderer.h"
 #include "GameObject.h"
+#include <iostream>;
 
 
 engine::Animator::Animator() : m_currentAnimation(nullptr), m_currentFrameIndex(0), m_elapsedTime(0.0f) {}
 
 void engine::Animator::SetAnimation(std::shared_ptr<Animation> animation) {
-	m_currentAnimation = std::move(animation);
+	m_currentAnimation = animation;
 	m_currentFrameIndex = 0;
 	m_elapsedTime = 0.0f;
 }
@@ -20,8 +21,8 @@ void engine::Animator::Update(float deltaTime) {
 
 	m_elapsedTime += deltaTime;
 
-	while (m_elapsedTime >= m_currentAnimation->GetFrame(m_currentFrameIndex).m_duration) {
-		m_elapsedTime -= m_currentAnimation->GetFrame(m_currentFrameIndex).m_duration;
+	while (m_elapsedTime >= m_currentAnimation->GetFrame(m_currentFrameIndex)->GetDuration()) {
+		m_elapsedTime -= m_currentAnimation->GetFrame(m_currentFrameIndex)->GetDuration();
 
 		if (m_currentAnimation->IsLooping()) {
 			m_currentFrameIndex = (m_currentFrameIndex + 1) % m_currentAnimation->GetFrameCount();
@@ -39,7 +40,7 @@ void engine::Animator::Update(float deltaTime) {
 
 		// Update the sprite renderer with the current frame's sprite
 		if (m_renderer != nullptr) {
-			m_renderer->SetSprite(m_currentAnimation->GetFrame(m_currentFrameIndex).m_sprite);
+			m_renderer->SetSprite(*m_currentAnimation->GetFrame(m_currentFrameIndex)->GetSprite());
 		}
 	}
 }
