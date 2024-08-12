@@ -5,7 +5,6 @@
 
 namespace engine {
 	class Animator : public Component<Animator> {
-
 	public:
 		Animator();
 		virtual void Start();

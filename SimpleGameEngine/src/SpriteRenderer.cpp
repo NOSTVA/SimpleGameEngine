@@ -1,7 +1,7 @@
 #include "SpriteRenderer.h"
 
 
-engine::SpriteRenderer::SpriteRenderer(const sf::Sprite& sprite) {
+engine::SpriteRenderer::SpriteRenderer(std::shared_ptr<sf::Sprite> sprite) {
 	SetSprite(sprite);
 }
 
@@ -17,6 +17,6 @@ const std::shared_ptr<sf::Sprite> engine::SpriteRenderer::GetSprite() {
 	return m_sprite;
 }
 
-void engine::SpriteRenderer::SetSprite(const sf::Sprite& sprite) {
-	m_sprite = std::make_shared<sf::Sprite>(sprite);
+void engine::SpriteRenderer::SetSprite(std::shared_ptr<sf::Sprite> sprite) {
+	m_sprite = std::move(sprite);
 }

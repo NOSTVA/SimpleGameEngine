@@ -40,7 +40,7 @@ void engine::Animator::Update(float deltaTime) {
 
 		// Update the sprite renderer with the current frame's sprite
 		if (m_renderer != nullptr) {
-			m_renderer->SetSprite(*m_currentAnimation->GetFrame(m_currentFrameIndex)->GetSprite());
+			m_renderer->SetSprite(m_currentAnimation->GetFrame(m_currentFrameIndex)->GetSprite());
 		}
 	}
 }

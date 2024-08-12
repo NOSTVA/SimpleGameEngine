@@ -3,7 +3,7 @@
 
 // custom component
 class PlayerController : public engine::Component<PlayerController> {
-	float speed = 2.0f;
+	float speed = 1.0f;
 	engine::SpriteSheet walking_sheet = engine::SpriteSheet("Assets/Character/Textures/walkcycle/BODY_male.png", { 64, 64 });
 	std::shared_ptr<engine::Animator> animator;
 
@@ -113,14 +113,14 @@ class PlayerController : public engine::Component<PlayerController> {
 
 int main() {
 	engine::Game game;
+
+	auto player1 = std::make_shared<engine::GameObject>();
+	player1->AddComponent<engine::SpriteRenderer>();
+	player1->AddComponent<engine::Animator>();
+	player1->AddComponent<PlayerController>();
+
 	auto scene = std::make_shared<engine::Scene>();
-	auto player = std::make_shared<engine::GameObject>();
-
-	player->AddComponent<engine::SpriteRenderer>();
-	player->AddComponent<engine::Animator>();
-	player->AddComponent<PlayerController>();
-
-	scene->AddGameObject(player);
+	scene->AddGameObject(player1);
 
 	game.SetCurrentScene(scene);
 	game.Run();
