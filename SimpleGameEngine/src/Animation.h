@@ -42,6 +42,7 @@ namespace engine {
 		explicit Animation(bool loop = true) : m_loop(loop) {}
 
 		void AddFrame(std::shared_ptr<Frame> frame);
+		void AddFrames(const std::vector<std::shared_ptr<Frame>>& frames);
 		std::shared_ptr<Frame> GetFrame(std::size_t index) const;
 		std::size_t GetFrameCount() const;
 		bool IsLooping() const;

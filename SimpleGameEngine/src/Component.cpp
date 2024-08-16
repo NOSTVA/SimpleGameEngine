@@ -1,6 +1,8 @@
 #include "Component.h"
 #include "GameObject.h"
 
-void engine::ComponentBase::SetGameObject(engine::GameObject* gameObject) {
-	this->gameObject = gameObject;
-};
+namespace engine {
+	void ComponentBase::SetGameObject(GameObject* gameObject) {
+		this->gameObject = gameObject;
+	};
+}

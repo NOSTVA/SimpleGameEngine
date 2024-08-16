@@ -1,23 +1,24 @@
 #include "Scene.h"
-
-void engine::Scene::Start() {
-	for (auto& obj : m_gameObjects) {
-		obj->Start();
+namespace engine {
+	void Scene::Start() {
+		for (auto& obj : m_gameObjects) {
+			obj->Start();
+		}
 	}
-}
 
-void engine::Scene::Update(float deltaTime) {
-	for (auto& obj : m_gameObjects) {
-		obj->Update(deltaTime);
+	void Scene::Update(float deltaTime) {
+		for (auto& obj : m_gameObjects) {
+			obj->Update(deltaTime);
+		}
 	}
-}
 
-void engine::Scene::Render(sf::RenderWindow& window) {
-	for (auto& obj : m_gameObjects) {
-		obj->Render(window);
+	void Scene::Render(sf::RenderWindow& window) {
+		for (auto& obj : m_gameObjects) {
+			obj->Render(window);
+		}
 	}
-}
 
-void engine::Scene::AddGameObject(std::shared_ptr<GameObject> obj) {
-	m_gameObjects.push_back(std::move(obj));
+	void Scene::AddGameObject(std::shared_ptr<GameObject> obj) {
+		m_gameObjects.push_back(std::move(obj));
+	}
 }

@@ -1,7 +1,6 @@
 #include "SpriteSheet.h"
 
 namespace engine {
-
     SpriteSheet::SpriteSheet(const std::string& fileName, const sf::Vector2u& sprite_size) {
         LoadTexture(fileName);
         GenerateSprites(sprite_size);

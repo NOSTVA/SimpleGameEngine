@@ -1,40 +1,60 @@
 #include "SimpleGameEngine.h"
 #include <iostream>
 
+
+std::shared_ptr<engine::Animation> LoadAnimation(int start, int end, engine::SpriteSheet& sheet) {
+	auto animation = std::make_shared<engine::Animation>();
+
+	for (int i = start; i < end; i++) {
+		if (i == start) {
+			animation->AddFrame(std::make_shared<engine::Frame>(engine::Frame(sheet.GetSprite(i), 0)));
+		}
+		animation->AddFrame(std::make_shared<engine::Frame>(engine::Frame(sheet.GetSprite(i))));
+	}
+
+	return animation;
+}
+
 // custom component
 class PlayerController : public engine::Component<PlayerController> {
-	float speed = 1.0f;
-	engine::SpriteSheet walking_sheet = engine::SpriteSheet("Assets/Character/Textures/walkcycle/BODY_male.png", { 64, 64 });
-	std::shared_ptr<engine::Animator> animator;
-
-	std::shared_ptr<engine::Animation> walking_top_anim = std::make_shared<engine::Animation>();
-	std::shared_ptr<engine::Animation> walking_left_anim = std::make_shared<engine::Animation>();
-	std::shared_ptr<engine::Animation> walking_bottom_anim = std::make_shared<engine::Animation>();
-	std::shared_ptr<engine::Animation> walking_right_anim = std::make_shared<engine::Animation>();
-
-	std::shared_ptr<engine::Animation> idle_top_anim = std::make_shared<engine::Animation>();
-	std::shared_ptr<engine::Animation> idle_left_anim = std::make_shared<engine::Animation>();
-	std::shared_ptr<engine::Animation> idle_bottom_anim = std::make_shared<engine::Animation>();
-	std::shared_ptr<engine::Animation> idle_right_anim = std::make_shared<engine::Animation>();
-
-	std::shared_ptr<engine::Animation> current_anim = idle_bottom_anim;
-
 	enum class Direction { Top, Bottom, Left, Right };
 
 	Direction lastDirection = Direction::Bottom;
 
+	float speed = 3.0f;
+
+	engine::SpriteSheet walking_sheet = engine::SpriteSheet("Assets/Character/Textures/walkcycle/BODY_male.png", { 64, 64 });
+
+	std::shared_ptr<engine::Animator> animator;
+
+	std::shared_ptr<engine::Animation> walking_top_anim;
+	std::shared_ptr<engine::Animation> walking_left_anim;
+	std::shared_ptr<engine::Animation> walking_bottom_anim;
+	std::shared_ptr<engine::Animation> walking_right_anim;
+
+	std::shared_ptr<engine::Animation> idle_top_anim;
+	std::shared_ptr<engine::Animation> idle_left_anim;
+	std::shared_ptr<engine::Animation> idle_bottom_anim;
+	std::shared_ptr<engine::Animation> idle_right_anim;
+
+	std::shared_ptr<engine::Animation> current_anim = idle_bottom_anim;
+
+
+
 	void Start() {
+		gameObject->transform->scale = sf::Vector2f(2, 2);
+
 		animator = gameObject->GetComponent<engine::Animator>();
 
-		idle_top_anim->AddFrame(std::make_shared<engine::Frame>(engine::Frame(walking_sheet.GetSprite(0))));
-		idle_left_anim->AddFrame(std::make_shared<engine::Frame>(engine::Frame(walking_sheet.GetSprite(9))));
-		idle_bottom_anim->AddFrame(std::make_shared<engine::Frame>(engine::Frame(walking_sheet.GetSprite(18))));
-		idle_right_anim->AddFrame(std::make_shared<engine::Frame>(engine::Frame(walking_sheet.GetSprite(27))));
+		idle_top_anim = LoadAnimation(0, 1, walking_sheet);
+		idle_left_anim = LoadAnimation(9, 10, walking_sheet);
+		idle_bottom_anim = LoadAnimation(18, 19, walking_sheet);
+		idle_right_anim = LoadAnimation(27, 28, walking_sheet);
 
-		for (int i = 1; i < 9; i++) walking_top_anim->AddFrame(std::make_shared<engine::Frame>(engine::Frame(walking_sheet.GetSprite(i))));
-		for (int i = 10; i < 17; i++) walking_left_anim->AddFrame(std::make_shared<engine::Frame>(engine::Frame(walking_sheet.GetSprite(i))));
-		for (int i = 19; i < 26; i++) walking_bottom_anim->AddFrame(std::make_shared<engine::Frame>(engine::Frame(walking_sheet.GetSprite(i))));
-		for (int i = 28; i < 35; i++) walking_right_anim->AddFrame(std::make_shared<engine::Frame>(engine::Frame(walking_sheet.GetSprite(i))));
+		walking_top_anim = LoadAnimation(1, 9, walking_sheet);
+		walking_left_anim = LoadAnimation(10, 18, walking_sheet);
+		walking_bottom_anim = LoadAnimation(19, 27, walking_sheet);
+		walking_right_anim = LoadAnimation(28, 36, walking_sheet);
 
 		if (animator != nullptr) animator->SetAnimation(current_anim);
 	}
